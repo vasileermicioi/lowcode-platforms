@@ -13,7 +13,7 @@ services:
     #  - "27017:27017"
     environment:
       # Public base url
-      LOWCODER_PUBLIC_URL: "http://localhost:3000/"
+      LOWCODER_PUBLIC_URL: "${LOWCODER_PUBLIC_URL}"
       # enable services
       LOWCODER_REDIS_ENABLED: "true"
       LOWCODER_MONGODB_ENABLED: "true"
