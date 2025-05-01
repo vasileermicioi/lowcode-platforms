@@ -8,8 +8,8 @@ services:
     image: lowcoderorg/lowcoder-ce-frontend:2.6.5
     container_name: lowcoder
     ports:
-      - "3000:3000"
-      - "3443:3443"
+      - "127.0.0.1:3000:3000"
+      - "127.0.0.1:3443:3443"
     #  - "27017:27017"
     environment:
       # Public base url
