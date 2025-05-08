@@ -1,0 +1,16 @@
+services:
+  pgdb:
+    image: supabase/postgres:17.0.1.078-orioledb
+    env_file:
+      - .env
+    ports:
+      - "${POSTGRES_PORT}:5432"
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ./pg-data:/var/lib/postgresql/data
+
+  pgweb:
+    image: sosedoff/pgweb:latest
+    ports:
+      - "${POSTGRES_WEB_PORT}:8081"

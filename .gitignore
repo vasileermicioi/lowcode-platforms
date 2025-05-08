@@ -1,3 +1,5 @@
 .env
 **/lowcoder-stacks
 **/n8n-data
+tmp/
+**/pg-data
