@@ -3,3 +3,4 @@
 **/n8n-data
 tmp/
 **/pg-data
+volumes/

@@ -43,7 +43,7 @@ services:
   ## Start Lowcoder backend services (api-service and node-service)
   ##
   lowcoder-api-service:
-    image: lowcoderorg/lowcoder-ce-api-service:2.6.5
+    image: lowcoderorg/lowcoder-ce-api-service:2.7.2
     container_name: lowcoder-api-service
     environment:
       LOWCODER_PUBLIC_URL: "${LOWCODER_PUBLIC_URL}"
@@ -114,7 +114,7 @@ services:
 
 
   lowcoder-node-service:
-    image: lowcoderorg/lowcoder-ce-node-service:latest
+    image: lowcoderorg/lowcoder-ce-node-service:2.7.2
     container_name: lowcoder-node-service
     # Enabled ports to be able to access backend from host
     # ports:
@@ -138,7 +138,7 @@ services:
   ## Start Lowcoder web frontend
   ##
   lowcoder-frontend:
-    image: lowcoderorg/lowcoder-ce-frontend:latest
+    image: lowcoderorg/lowcoder-ce-frontend:2.7.2
     container_name: lowcoder-frontend
     ports:
       - "${LOWCODER_FRONTEND_PORT}:3000"
